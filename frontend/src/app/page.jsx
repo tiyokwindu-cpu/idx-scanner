@@ -44,7 +44,7 @@ export default function CommandCenter() {
           disabled={loading} 
           className="bg-emerald-600 hover:bg-emerald-500 text-black font-bold px-4 py-2 rounded-lg flex items-center gap-2 cursor-pointer transition-all disabled:opacity-50"
         >
-          <RefreshCw className={'w-4 h-4 ' + (loading ? 'animate-spin' : '')} />
+          <RefreshCw className={"w-4 h-4 " + (loading ? "animate-spin" : "")} />
           {loading ? 'SCANNING...' : 'RUN FULL SCAN'}
         </button>
       </header>
@@ -76,8 +76,8 @@ export default function CommandCenter() {
                   <td className="p-3 text-right font-bold">
                     {typeof item.price === 'number' ? item.price.toLocaleString('id-ID') : item.price}
                   </td>
-                  <td className={'p-3 text-right font-bold ' + (item.change >= 0 ? 'text-emerald-400' : 'text-rose-500')}>
-                    {item.change > 0 ? `+${item.change}` : item.change}%
+                  <td className={"p-3 text-right font-bold " + (item.change >= 0 ? "text-emerald-400" : "text-rose-500")}>
+                    {item.change > 0 ? "+" + item.change : item.change}%
                   </td>
                   <td className="p-3 text-center">
                     <span className="px-2 py-1 bg-emerald-950 text-emerald-400 rounded text-xs">
